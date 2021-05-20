@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<style type="text/css">
+	html {
+            scroll-behavior: smooth;
+            font-family: "Verdana", sans-serif;
+        }
+
+        body {
+            padding: 0px;
+            margin: 0px;
+            background: linear-gradient(to top, cyan 20%, transparent 100%), url('C:\Users\HP\Desktop\organ\kelly-sikkema-4le7k9XVYjE-unsplash.jpg');
+            background-size: 100% 100%;
+            background-attachment: scroll;
+            background-repeat: no-repeat;
+        }
+
+        .header {
+
+            display: flex;
+        }
+
+        .header .box1 {
+            display: flex;
+            align-items: center;
+        }
+
+        .header .box1 img {
+            height: 15vh;
+            margin-left: 1vw;
+
+        }
+
+        nav li {
+            display: inline-block;
+            margin-left: 8vw;
+            padding-top: 23px;
+            position: relative;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-family: 'Baloo Bhai 2', cursive;
+
+        }
+
+        nav a:hover {
+            color: #000;
+        }
+
+        nav a::before {
+        	content: '';
+            display: block;
+            height: 5px;
+            background-color: #444;
+
+            position: absolute;
+            top: 0;
+            width: 0%;
+
+            transition: all ease-in-out 250ms;
+        }
+
+        nav a:hover:before {
+            width: 100%;
+        }
+
+
+
+        .right {
+            display: inline-block;
+
+            position: absolute;
+            right: 36px;
+            top: -25px;
+            color: white;
+            margin-top: 33px;
+
+
+        }
+
+        .right .btn {
+            margin: 8px;
+            cursor: pointer;
+            background-color: #3758e3;
+            color: white;
+        }
+          .right .btn:hover {
+            color: red;
+            background-color: black;
+
+        }
+
+        footer {
+            position: relative;
+            width: 100%;
+            height: auto;
+            padding: 50px, 100px;
+            background: #111;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        footer .main-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        footer .main-content .left {
+            margin-right: 50px;
+        }
+
+        footer .main-content .left.box {
+            width: 40%;
+        }
+
+        footer .main-content h2 {
+            position: relative;
+            color: #fff;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+
+        footer .main-content .left.box h2:before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: #f00;
+        }
+
+        footer p {
+            color: #fff;
+        }
+
+        .social {
+            margin-top: 20px;
+            display: flex;
+
+        }
+
+        .social a {
+            list-style: none;
+        }
+
+        .social a span {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: #222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            text-decoration: none;
+            border-radius: 4px;
+
+        }
+
+        .social a span:hover {
+            background: #f00;
+        }
+
+        .quicklinks {
+            position: relative;
+            width: 25%;
+        }
+
+        .quicklinks ul li {
+            list-style: none;
+        }
+
+        .quicklinks ul li a {
+            color: #999;
+            text-decoration: none;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        .copyrightText {
+            width: 100%;
+            background: #181818;
+            padding: 8px 100px;
+            text-align: center;
+            color: #999;
+
+        }
+
+        .text{
+            color: grey;
+        }
+        
+</style>
+<body>
+
+	
+
+	<div class="all">
+
+        <div class="header">
+            <div class="box1">
+                <img src="C:\Users\HP\Desktop\organ\WhatsApp Image 2021-01-21 at 10.49.04.jpeg" alt="">
+
+            </div>
+            <div class="box2">
+                <nav>
+                    <ul>
+                        <li class="item"><a href="Angdaan.html">Home</a></li>
+                        <li class="item"><a href=>About</a></li>
+                        <li class="item"><a href="#kod">Know Organ Donation</a></li>
+                        <li class="item"><a>Register</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+            <div class="right">
+                
+                <button class="btn">Email us</button>
+</div>
+</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-8">
+			<img src="C:\Users\HP\OneDrive\Desktop\organ\computer-icons-user-profile-avatar-download-png-favpng-HCP2ruSy9qq256gNd6va7BTdJ.jpg" width="50%"height="50%">
+		</div>
+		<div class="col-sm-8">
+           
+           	<div class="msg">
+                            <label>FIRST NAME  :</label>
+                            <input type="text" name="first_name" required="" />
+                            
+                            <label>LAST NAME  :</label>
+                            <input type="text" name="last_name" required="last_name" /><br>
+
+                            <br> GENDER  :
+                            <input type="radio" name="Gender"/>Male
+                            <input type="radio" name="Gender"/>Female
+                            <input type="radio" name="Gender"/>Others<br>
+
+                            <br>DATE OF BIRTH(DOB):
+                             <input type="DATE" name="date_birth" min=1949-12-31 required="" /><br>
+
+                            <br> AGE  :
+                            <input type="NUMBER" min=21 max=61 required="" /><br>
+
+                            
+                            <br>PROFESSION  :
+                            <input list="job">
+                            <datalist id ="job">
+                                <option value="PRIVATE SECTOR/COOPERATE SECTOR"></option>
+                                <option value="GOVERNMENT SECTOR/PUBLIC SECTOR"></option>
+                                <OPTION VALUE="TEACHER/PROFESSOR"></OPTION>
+                                <OPTION VALUE="SMALL BUSINESS/LARGE COMPANY BUSINESS"></OPTION>
+                                <OPTION VALUE="OTHERS"></OPTION>
+
+                            </datalist><BR>
+
+                            <br> LOCATION  :
+                            <input list="location">
+                            <datalist id="location">
+                                <option value="">Andanaman and nicobar Island</option>    
+                                <option value="">Andhra pradesh</option>
+                                <option value="">Arunchal Pradesh</option>
+                                <option value="">Assam</option>
+                                <option value="">Bihar</option>
+                                <option value="">chattisgarh</option>
+                                <option value="">Delhi</option> 
+                                <option value="">Dadra and nagar haveli</option>
+
+                                <option value="">Daman and diu</option>     
+                                <option value="">Goa</option>
+                                <option value="">Gujarat</option>
+                                <option value="">Haryana</option>
+                                <option value="">Himachal pradesh</option>
+                                <option value="">Jammu and Kashmir</option>
+                                <option value="">Jharkhand</option>
+                                <option value="">Karnataka</option>
+                                <option value="">Kerala</option>
+                                <option value="">Lakshwadeep</option>   
+                                <option value="">Madhya Pradesh</option>
+                                <option value="">Maharashtra</option>
+                                <option value="">Manipur</option>
+                                <option value="">Meghalaya</option>
+                                <option value="">Mizoram</option>
+                                <option value="">Nagaland</option>
+                                <option value="">Odisha</option>
+                                <option value="">Punjab</option>
+                                <option value="">puducherry</option>   
+                                <option value="">Rajasthan</option>
+                                <option value="">Sikkim</option>
+                                <option value="">Tamil Naidu</option>
+                                <option value="">Telengana</option>
+                                <option value="">Tripura</option>
+                                <option value="">UttarPradesh</option>
+                                <option value="">Uttrakhand</option>
+                                <option value="">West Bengal</option>
+
+                            </datalist><br>
+
+                            <br>ADDRESS  :
+                            <textarea rows="3" cols="100" required=""></textarea><br>
+                        
+                            <br>EMAIL ID  :
+                            <input type="email" required=""/><br>
+
+                            <br>PHONE NUMBER  :
+                            <input type="text" required="" /><br>
+                            
+                            <br>ALTERNATE PHONE NUMBER  :
+                            <input type="text" /><br>
+                            
+                            <br>
+                                BLOOD GROUP:
+                                <input list="blood_group">
+                                <datalist id="blood_group">
+                                <option value="O+"></option>
+                                <option value="O-"></option>
+                                <option value="A+"></option>
+                                <option value="A-"></option>
+                                <option value="B+"></option>
+                                <option value="B-"></option>
+                                <option value="AB+"></option>
+                                <option value="AB-"></option>
+                            
+                                </datalist>                            
+
+                            <br>
+
+                            <br>Are you Acceptor or donator?<br>
+                            <input type="radio" name="you">ACCEPTOR<br>
+                            <input type="radio" name="you">Donator<br>
+
+                            <br>Are you physically fit?*<br>
+                            <input type="radio" name="fit">YES<br>
+                            <input type="radio" name="fit">NO<br>
+
+                            <br> Provide Your Medical Certificate?  :<br>
+                            <input type="file"/> <br>
+                            
+                            <br>Do You want to donate your organ on your own consent(Yes/NO)*?    :
+                            <br>
+                            <input type="radio" name="donate">YES  <br>
+                            <input type="radio" name="donate">NO<br>  
+		                    
+		                    <br>Do you take any kind of beverage?*  :<br>
+                            <input type="radio" name="bev">YES<br>
+                            <input type="radio" name="bev">NO<br>
+                           
+                            <br>Which Organ do you want to Donate/Accept?*<br>
+                            <input type="text" name="organ" required/><br>
+                            
+                            <br>Do You exercise daily?*<br>
+                            <input type="radio" name="exe">YES<br>
+                            <input type="radio" name="exe">NO<br>
+
+                            <br><input type="Checkbox" name="check_box"><br>I read all the instruction and information provided by me is correct<br>
+
+                            <br>
+                            <input type="SUBMIT" name="SUBMIT">
+
+
+                            
+            </div>
+
+     </div>
+    </div>
+   </div>
+   
+         
+
+ <footer>
+        <div class="main-content">
+            <div class="left box">
+                <h2> About us</h2>
+                <p>ANGDAAN is a organ donation website where you can donate organ to one donar and can save 8
+                    lives.Organ you can donate include kidney,heart,,Eyes and skin etc</p>
+                <div class="social">
+                    <a href="#"><span class="fab fa-facebook f"></span></a>
+                    <a href="#"><span class="fab fa-twitter"></span></a>
+                    <a href="#"><span class="fab fa-instagram"></span></a>
+                    <a href="#"><span class="fab fa-youtube"></span></a>
+                </div>
+
+
+                <h2> Address</h2>
+                <div class="Content">
+                    <div class="place">
+                        <span class="fas fa-map-marker-alt"></span>
+                        <span class="text">Delhi,India</span>
+                    </div>
+                    <div class="phone">
+                        <span class="fas fa-phone-alt"></span>
+                        <span class="text">+91 90XXXXXXX1</span>
+                    </div>
+                    <div class="Email">
+                        <span class="fas fa-envelope"></span>
+                        <span class="text">abc@example.com</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="left quicklinks">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Terms &Condition</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="left contact">
+                <h2> Contact us</h2>
+                <div class="content">
+                    <form action="#">
+                        <div class="email">
+                            <div class="text">Email*</div>
+                            <input type="email" required>
+                        </div>
+                        <div class="msg">
+                            <div class="text">Message*</div>
+                            <textarea rows="2" cols="25" required></textarea>
+                        </div>
+                        <div class="btn">
+                            <button type="Submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyrightText">
+        <p>Copyright © 2021 ANGDAAN.All right are reserved</p>
+    </div>
+
+</body>
+</html>

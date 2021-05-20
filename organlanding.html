@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+    <style>
+        html {
+            scroll-behavior: smooth;
+            font-family: "Verdana", sans-serif;
+        }
+
+        body {
+            padding: 0px;
+            margin: 0px;
+            background: linear-gradient(to top, #231f33 15%, transparent 50%), url('C:\Users\HP\Desktop\organ\kelly-sikkema-4le7k9XVYjE-unsplash.jpg');
+            background-size: 100vw 100vh;
+            background-attachment: scroll;
+            background-repeat: no-repeat;
+        }
+
+        .header {
+
+            display: flex;
+        }
+
+        .header .box1 {
+            display: flex;
+            align-items: center;
+        }
+
+        .header .box1 img {
+            height: 15vh;
+            margin-left: 1vw;
+
+        }
+
+        nav li {
+            display: inline-block;
+            margin-left: 8vw;
+            padding-top: 23px;
+
+
+
+
+            position: relative;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-family: 'Baloo Bhai 2', cursive;
+
+        }
+
+        nav a:hover {
+            color: #000;
+        }
+
+        nav a::before {
+            content: '';
+            display: block;
+            height: 5px;
+            background-color: #444;
+
+            position: absolute;
+            top: 0;
+            width: 0%;
+
+            transition: all ease-in-out 250ms;
+        }
+
+        nav a:hover:before {
+            width: 100%;
+        }
+
+
+
+        .right {
+            display: inline-block;
+
+            position: absolute;
+            right: 36px;
+            top: -25px;
+            color: white;
+            margin-top: 33px;
+
+
+        }
+
+        .right .btn {
+            margin: 8px;
+            cursor: pointer;
+            background-color: #3758e3;
+            color: white;
+        }
+
+        .right .btn:hover {
+            color: red;
+            background-color: black;
+
+        }
+
+
+        .page1 {
+            height: 80vh;
+            width: 90vw;
+        }
+
+        .main {
+            width: 35vw;
+            position: absolute;
+            margin-top: 50vh;
+            margin-left: 30vw;
+            color: floralwhite;
+
+        }
+
+
+        .donate {
+            display: inline-block;
+            position: absolute;
+            margin-top: 65vh;
+            margin-left: 40vw;
+        }
+
+        .donate button {
+            margin-left: 2vw;
+            background-color: orange;
+            border-radius: 1em;
+            font-size: 1.1em;
+
+            width: 8vw;
+            height: 6vh;
+        }
+
+        .donate button:hover {
+            color: floralwhite;
+            background-color: black;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            {
+            background-image: url('https://akm-img-a-in.tosshub.com/indiatoday/images/story/201908/Slider_2.jpeg?4uBo_NgoTqDUdIm4J4jjoeeCGSUWC6RV&size=1200:675');
+            height: 50vh;
+            width: 25%;
+            position: absolute;
+            top: 52%;
+            left: 31%;
+            transform: translate(-50%, -50%);
+            background-size: 100%, 100%;
+
+            animation: slider 25s infinite linear;
+            background-color: black;
+
+
+        }
+
+        @keyframes slider {
+            0% {
+                background-image: url('https://akm-img-a-in.tosshub.com/indiatoday/images/story/201908/Slider_2.jpeg?4uBo_NgoTqDUdIm4J4jjoeeCGSUWC6RV&size=1200:675');
+            }
+
+            16% {
+                background-image: url('https://barefootmeds.files.wordpress.com/2014/03/kidney-quote.jpg');
+            }
+
+            33% {
+                background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlXvmw6slStQt_UVhgEFdAsfhzGTcS48Qo8Q&usqp=CAU');
+            }
+
+            50% {
+                background-image: url('https://image.slidesharecdn.com/organdonationawareness-190513103202/95/organ-donation-awareness-1-638.jpg?cb=1557743687');
+            }
+
+            65% {
+                background-image: url('https://s.yimg.com/ny/api/res/1.2/j3cXDg29.7qVzF2KuIas6A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTI0OC44ODg4ODg4ODg4ODg4OQ--/https://s.yimg.com/uu/api/res/1.2/kLD140j0LKHlXggueNg.LA--~B/aD01NjA7dz0xNDQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/the_conversation_canada_501/40bdfa47bbca0bc8675469d4a036af9c');
+            }
+
+            82% {
+                background-image: url('https://thecsruniverse.com/wp-content/uploads/2020/11/organ-donation-2.jpg');
+            }
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family:  "poppins", sans-serif;
+        }
+
+
+        .testimonials {
+            padding: 40px 0;
+
+            color: #434343;
+            text-align: center;
+
+        }
+
+        .inner {
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+
+        }
+
+        .border {
+            width: 160px;
+            height: 5px;
+            background: #fff033;
+            margin: 26px auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .col {
+            flex: 33.33%;
+            max-width: 33.33%;
+            box-sizing: border-box;
+            padding: 15px;
+
+        }
+
+        .testimonial {
+            background: #fff;
+            padding: 30px;
+        }
+
+        .testimonial img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .name {
+            font-size: 20px;
+            text-transform: uppercase;
+            margin: 20px 0;
+        }
+
+        .stars {
+            color: yellow;
+            margin-bottom: 20px;
+
+        }
+
+        @media screen and(max-width:960px) {
+            .col {
+                flex: 100%;
+                max-width: 100%;
+
+            }
+        }
+
+        .all {
+            display: grid;
+
+        }
+
+        .know {
+            margin-top: 18vh;
+            background-color: lightgrey;
+            padding-top: 2vh;
+            padding-left: 2vw;
+            min-height: 100vh;
+
+            text-transform: lowercase;
+
+        }
+
+        .know p {
+            margin-left: 2vw;
+            margin-top: 5vh;
+
+        }
+
+        .know li a {
+            margin-left: 2vw;
+            margin-top: 5vh;
+            list-style: bullets;
+
+        }
+
+        section:nth-child(odd) {
+            background: #c8d6e5;
+        }
+
+
+
+
+        @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+      //  * {
+            margin: 0;
+            padding: 0;
+            color: #d9d9d9;
+            box-sizing: border-box;
+            font-family: "poppins", sans-serif;
+
+        }
+
+       // body {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+            background: #ede7f6;
+        }
+
+        footer {
+            position: relative;
+            width: 100%;
+            height: auto;
+            padding: 50px, 100px;
+            background: #111;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        footer .main-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        footer .main-content .left {
+            margin-right: 50px;
+        }
+
+        footer .main-content .left.box {
+            width: 40%;
+        }
+
+        footer .main-content h2 {
+            position: relative;
+            color: #fff;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+
+        footer .main-content .left.box h2:before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: #f00;
+        }
+
+        footer p {
+            color: #fff;
+        }
+
+        .social {
+            margin-top: 20px;
+            display: flex;
+
+        }
+
+        .social a {
+            list-style: none;
+        }
+
+        .social a span {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: #222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            text-decoration: none;
+            border-radius: 4px;
+
+        }
+
+        .social a span:hover {
+            background: #f00;
+        }
+
+        .quicklinks {
+            position: relative;
+            width: 25%;
+        }
+
+        .quicklinks ul li {
+            list-style: none;
+        }
+
+        .quicklinks ul li a {
+            color: #999;
+            text-decoration: none;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        .copyrightText {
+            width: 100%;
+            background: #181818;
+            padding: 8px 100px;
+            text-align: center;
+            color: #999;
+
+        }
+
+        .text{
+            color: grey;
+        }
+        
+
+    </style>
+
+
+</head>
+
+
+
+
+<body>
+    <div class="all">
+
+        <div class="header">
+            <div class="box1">
+                <img src="C:\Users\HP\Desktop\organ\WhatsApp Image 2021-01-21 at 10.49.04.jpeg" alt="">
+
+            </div>
+            <div class="box2">
+                <nav>
+                    <ul>
+                        <li class="item"><a href="project1.html">Home</a></li>
+                        <li class="item"><a href=>About</a></li>
+                        <li class="item"><a href="#kod">Know Organ Donation</a></li>
+                        <li class="item"><a>Register</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+            <div class="right">
+                <button class="btn">Sign Up</button>
+                <button class="btn">Email us</button>
+
+
+
+
+            </div>
+        </div>
+        <hr />
+        <div class="page1">
+
+            <div class="main">
+              
+                <h2>“Give yourself and those in need an elixir of life by pledging your organs.”</h2>
+            </div>
+            <div class="donate">
+                <button>Donate Now</button>
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <section id="kod" class="know">
+            <h2>What is organ donation and transplantation?</h2>
+            <p>Organ donation is the process of surgically removing an organ or tissue from one person (the organ donor)
+                and placing it into another person (the recipient). Transplantation is necessary because the recipient’s
+                organ has failed or has been damaged by disease or injury.
+
+                Organ transplantation is one of the great advances in modern medicine. Unfortunately, the need for organ
+                donors is much greater than the number of people who actually donate. Every day in the United States, 21
+                people die waiting for an organ and more than 120,048 (www.unos.org, Nov. 1, 2016) men, women, and
+                children await life-saving organ transplants.</p>
+
+            <h2>What organs and tissues can be transplanted?</h2>
+            <p>
+            <h3>Organs and tissues that can be transplanted include:</h3>
+            </p>
+            <p>
+            <ul>
+                <li><a> Liver</a></li>
+                <li><a>Kidney</a></li>
+                <li><a>Pancreas</a></li>
+                <li><a>Heart</a></li>
+                <li><a>Lung</a></li>
+                <li><a>Intestine</a></li>
+                <li><a>Cornea</a></li>
+                <li><a>Middle ear</a></li>
+                <li><a>Skin</a></li>
+                <li><a>Bone</a></li>
+                <li><a>Bone marrow</a></li>
+                <li><a>Heart valves</a></li>
+                <li><a>Connective tissue</a></li>
+                <li><a>Vascularized composite allografts (transplant of several structures that may include skin, bone,
+                        muscles, blood vessels, nerves, and connective tissue)</a></li>
+
+
+
+
+
+            </ul>
+            </p>
+            <h2>Who can be an organ donor?</h2>
+            <p>People of all ages should consider themselves potential donors. When a person dies, he or she is
+                evaluated for donor suitability based on their medical history and age. The Organ Procurement Agency
+                determines medical suitability for donation.</p>
+            <h2>What are the benefits of organ transplantation?</h2>
+            <h3>Depending on the organ a person receives, the benefits of transplantation can vary. Some of them may
+                include:</h3>
+            </p>
+            <ul>
+                <li><a>Living a healthier and longer life</a></li>
+                <li><a>No more pain due to a failed or dysfunctional organ</a></li>
+                <li><a>Avoiding medical procedures such as dialysis</a></li>
+                <li><a>Improved quality of life.</a></li>
+                <li><a>Treating congenital disabilities that endanger an individual’s life</a></li>
+                <li><a>Needing fewer surgeries or taking fewer medications.</a><a href="">Read more......</a></li>
+            </ul>
+
+
+
+    </div>
+
+
+
+    </section>
+
+
+
+
+
+    <div class="testimonials">
+        <div class="inner">
+            <h1>Testimonial</h1>
+            <div class="border"></div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="testimonial">
+                        <img src="C:\Users\HP\Desktop\organ\WhatsApp Image 2021-01-18 at 22.36.56.jpeg" alt="">
+                        <div class="name">Sonali Singh</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>"My Whole family is signed up for organ donation.we have joined ANGDAAN to support the
+                            families which are going through the transplant of organs in their uncertain time.We all
+                            have to take pledge for donation of organ.Donate your organs"</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="testimonial">
+                        <img src="C:\Users\HP\Desktop\organ\WhatsApp Image 2021-01-21 at 22.20.38.jpeg" alt="">
+                        <div class="name">Saurabh Swarnakar</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>"The thought was truly provoking which not only gave us insight related to organ donation,
+                            but also motivated us to take pledge for organ donation.I Owe you a special gratititude for
+                            you kind of favour and sparing your valuable time.So give life "</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="testimonial">
+                        <img src="C:\Users\HP\Desktop\organ\WhatsApp Image 2020-10-11 at 22.20.52.jpeg" alt="">
+                        <div class="name">Unnati Singh</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>"Organ donation empowerd me to console myself during this point of brief because somebody is
+                            going to live with my organs and they didn't lose them.Donate the need and get blessing
+                            Angdaan is here for u.So Donate your organs after death"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="main-content">
+            <div class="left box">
+                <h2> About us</h2>
+                <p>ANGDAAN is a organ donation website where you can donate organ to one donar and can save 8
+                    lives.Organ you can donate include kidney,heart,,Eyes and skin etc</p>
+                <div class="social">
+                    <a href="#"><span class="fab fa-facebook f"></span></a>
+                    <a href="#"><span class="fab fa-twitter"></span></a>
+                    <a href="#"><span class="fab fa-instagram"></span></a>
+                    <a href="#"><span class="fab fa-youtube"></span></a>
+                </div>
+
+
+                <h2> Address</h2>
+                <div class="Content">
+                    <div class="place">
+                        <span class="fas fa-map-marker-alt"></span>
+                        <span class="text">Delhi,India</span>
+                    </div>
+                    <div class="phone">
+                        <span class="fas fa-phone-alt"></span>
+                        <span class="text">+91 90XXXXXXX1</span>
+                    </div>
+                    <div class="Email">
+                        <span class="fas fa-envelope"></span>
+                        <span class="text">abc@example.com</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="left quicklinks">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Terms &Condition</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="left contact">
+                <h2> Contact us</h2>
+                <div class="content">
+                    <form action="#">
+                        <div class="email">
+                            <div class="text">Email*</div>
+                            <input type="email" required>
+                        </div>
+                        <div class="msg">
+                            <div class="text">Message*</div>
+                            <textarea rows="2" cols="25" required></textarea>
+                        </div>
+                        <div class="btn">
+                            <button type="Submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyrightText">
+        <p>Copyright © 2021 ANGDAAN.All right are reserved</p>
+    </div>
+
+</body>
+
+
+</html>

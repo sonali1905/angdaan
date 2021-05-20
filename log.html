@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+    <style >
+    	
+    	body{
+    		padding:0px;
+    		font-family:  Arial, Helvetica, sans-serif;
+    		box-sizing: border-box;
+    		height: 100vh;
+    		width: 100%;
+    		background: darkblue;
+    		}
+
+    	.container{
+    		position:absolute;
+    		top:50%;
+    		left:50%;
+    		transform: translate(-50%,-50%);
+    		background: #fff;
+    		width:410px;
+    		padding:30px;
+    		box-shadow: 0 0 0.8px rgba(0,0,0,0.4);
+    	}
+
+        .container .text{
+        	text-align: center;
+        	font-size: 30px;
+        	font-weight: bold;
+        	 font-family: "Times New Roman", Times, serif;
+        }
+
+        .container form{
+        	margin-top: -20px;
+        }
+
+        .container form .data{
+        	height:60px;
+        	width:100%;
+            margin:40px 0;
+        }
+        form .data label{
+        	font-size: 18px;
+        	text-decoration: inherit;
+        	font-family: "Poppins" sans-serif;
+        }
+        form .data input{
+        	height:100%;
+        	width: 100%;
+        	font-size: 20px;
+        	padding-left: 10px;
+        	border: 1px solid lightgrey;
+        }
+
+        form .btn{
+        	margin:30px 0;
+        	height:45px;
+        	width:100%;
+        	position: relative;
+        	overflow: hidden;
+        }
+        form .btn .inner{
+        	height: 100%;
+        	width:300%;
+        	position: absolute;
+        	left:-100%;
+        	z-index:-1;
+        	background: -webkit-linear-gradient(right,#56d8e4,#9f01ea,#56d8e4,#9f01ea);
+        	transition: all 0.4s;
+        }
+        form.btn:hover .inner{
+        	left:0;
+        }
+        form .btn  button{
+        	height:122%;
+        	width:100%;
+        	background: none;
+        	border:none;
+        	color:#fff;
+        	font-size: 18px;
+        	font-weight: 500;
+        	text-transform: uppercase;
+        	letter-spacing: 1px;
+        	cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="center">
+	<div class="container">
+		<div class="text">LOGIN FORM</div>
+		  <form action="#">
+		  	<div class="data">
+		  	<label>Email id</label>
+		  	<input type="text" required>
+		  </div>
+
+		  <div class="data">
+		  	<label>Password</label>
+		  	<input type="password" required>
+		  </div>
+          
+          <div class="Forgot-password"><a href="#">ForgotPassword?</a></div>
+		  <div class="btn">
+		  	<div class="inner"></div>
+		  	<button type="submit">Login</button>
+		  </div>
+		 </form>
+	</div>
+</div>
+
+
+</body>
+</html>

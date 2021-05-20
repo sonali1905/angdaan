@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive slider</title>
+    <style>
+
+      body{
+        padding: 0;
+        margin: 0;
+    }
+    #navbar{
+        display: flex;
+       position: relative;
+    }
+        .header h1{
+        
+        }
+    
+    #navbar::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        z-index: -1;
+        opacity: 0.4;
+    }
+        .header{
+            display: flex;
+        }
+
+     img{
+        display: flex;
+        flex-direction: column;      
+         background-color: aqua;
+         justify-content: center;
+        align-items: center;        
+    }
+        #navbar{
+            width: 90%;
+            height: 20%;
+        }
+    
+    #navbar ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #navbar ul li{
+        list-style: none;       
+    }
+    #navbar ul li a{
+        margin: 20px;
+        font-size: 1.1rem;      
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 3px;
+        padding-right: 3px;
+        cursor: pointer;     
+        border-radius: 13px;
+
+    }
+    #navbar ul li a:hover{
+        background-color: black;
+        color: white;
+    }
+        
+
+      .main{
+        background-image: url('https://akm-img-a-in.tosshub.com/indiatoday/images/story/201908/Slider_2.jpeg?4uBo_NgoTqDUdIm4J4jjoeeCGSUWC6RV&size=1200:675');
+        height:73vh;
+        width:76.4%;
+        position: absolute;
+        top:51.6%;
+        left:61.48%;
+        transform: translate(-50%,-50%);
+        background-size: 80%,100%;
+        
+        animation: slider 25s infinite linear;
+      }
+
+      @keyframes slider{
+        0%{      
+        background-image: url('https://akm-img-a-in.tosshub.com/indiatoday/images/story/201908/Slider_2.jpeg?4uBo_NgoTqDUdIm4J4jjoeeCGSUWC6RV&size=1200:675');
+        }
+        16%{
+          background-image: url('https://barefootmeds.files.wordpress.com/2014/03/kidney-quote.jpg');
+        }
+        33%{
+          background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlXvmw6slStQt_UVhgEFdAsfhzGTcS48Qo8Q&usqp=CAU');
+        }
+        50%{
+          background-image: url('https://image.slidesharecdn.com/organdonationawareness-190513103202/95/organ-donation-awareness-1-638.jpg?cb=1557743687');
+        }
+        65%{
+          background-image: url('https://s.yimg.com/ny/api/res/1.2/j3cXDg29.7qVzF2KuIas6A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTI0OC44ODg4ODg4ODg4ODg4OQ--/https://s.yimg.com/uu/api/res/1.2/kLD140j0LKHlXggueNg.LA--~B/aD01NjA7dz0xNDQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/the_conversation_canada_501/40bdfa47bbca0bc8675469d4a036af9c');
+        }
+        82%{
+          background-image: url('https://thecsruniverse.com/wp-content/uploads/2020/11/organ-donation-2.jpg');
+        }
+
+      } 
+    </style>
+</head>
+<body>
+
+  <div class="header"> 
+        
+          <img src="C:\Users\HP\Downloads\WhatsApp Image 2021-01-21 at 10.49.04.jpeg" alt="Angdaan.com" >
+    <nav id="navbar">
+       <ul>
+            <li class="item"><a>Home</a></li>
+            <li class="item"><a>About</a></li>
+            <li class="item"><a>Know Organ Donation</a></li>
+            <li class="item"><a>Register</a></li>
+          
+        </ul>
+    </nav>
+    
+    <h1>Yes I donate</h1>
+  </div>
+
+    <div class="main">
+
+    </div>
+</body>
+</html>
